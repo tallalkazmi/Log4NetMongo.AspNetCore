@@ -1,4 +1,4 @@
-using Log4NetMongo.Core;
+using Log4NetMongo.AspNetCore;
 using System;
 using Xunit;
 

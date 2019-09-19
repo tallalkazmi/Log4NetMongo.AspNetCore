@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 
-namespace Log4NetMongo.Core
+namespace Log4NetMongo.AspNetCore
 {
     public static class AppConfiguration
     {

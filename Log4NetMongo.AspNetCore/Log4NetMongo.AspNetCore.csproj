@@ -13,6 +13,9 @@
     <Copyright>Tallal Kazmi</Copyright>
     <PackageTags>log4net mongodb .netcore</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageId>Log4NetMongo.AspNetCore</PackageId>
+    <AssemblyName>Log4NetMongo.AspNetCore</AssemblyName>
+    <RootNamespace>Log4NetMongo.AspNetCore</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

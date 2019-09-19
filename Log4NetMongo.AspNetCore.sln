@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Log4NetMongo.Core", "Log4NetMongo.Core\Log4NetMongo.Core.csproj", "{E6C9A5AE-6EEC-4807-971A-33941F024122}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Log4NetMongo.AspNetCore", "Log4NetMongo.AspNetCore\Log4NetMongo.AspNetCore.csproj", "{E6C9A5AE-6EEC-4807-971A-33941F024122}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Log4NetMongo.Console", "Log4NetMongo.Console\Log4NetMongo.Console.csproj", "{9C6D7C2D-0823-49BA-B0E2-25DF7402003D}"
 EndProject

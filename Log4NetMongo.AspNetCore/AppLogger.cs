@@ -4,7 +4,7 @@ using System;
 using System.Diagnostics;
 using System.Reflection;
 
-namespace Log4NetMongo.Core
+namespace Log4NetMongo.AspNetCore
 {
     public class AppLogger : BaseLogger
     {

@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Log4NetMongo.Core\Log4NetMongo.Core.csproj" />
+    <ProjectReference Include="..\Log4NetMongo.AspNetCore\Log4NetMongo.AspNetCore.csproj" />
   </ItemGroup>
 
 </Project>

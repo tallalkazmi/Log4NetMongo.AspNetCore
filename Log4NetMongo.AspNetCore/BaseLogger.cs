@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Security.Claims;
 using System.Text;
 
-namespace Log4NetMongo.Core
+namespace Log4NetMongo.AspNetCore
 {
     public class BaseLogger
     {
