@@ -5,8 +5,14 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.1</Version>
     <Authors>Tallal Kazmi</Authors>
-    <Company />
+    <Company></Company>
     <Description>Log4Net implementation with mongodb appender in .Net Core 2.2</Description>
+    <PackageLicenseFile></PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/tallalkazmi/Log4NetMongo.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tallalkazmi/Log4NetMongo.Core</RepositoryUrl>
+    <Copyright>Tallal Kazmi</Copyright>
+    <PackageTags>log4net mongodb .netcore</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
