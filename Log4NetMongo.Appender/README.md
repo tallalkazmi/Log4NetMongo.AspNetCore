@@ -1,2 +1,3 @@
-# Log4Net.Mongo
-Updates to log4mongo-net classes to work with .Net Core 2.2 (<https://github.com/log4mongo/log4mongo-net>)
+# Log4NetMongo.Appender
+Updates to log4mongo-net classes to work with .NET Core 2.2.
+- Reference: <https://github.com/log4mongo/log4mongo-net>
