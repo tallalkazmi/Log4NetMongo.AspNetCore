@@ -11,6 +11,7 @@
     <PackageTags>log4net log4mongo-net .netcore</PackageTags>
     <Version>1.0.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>Log4NetMongo.Appender</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

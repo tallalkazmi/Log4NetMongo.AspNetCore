@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Log4Net.Mongo
+namespace Log4NetMongo.Appender
 {
     public class MongoDBAppender : AppenderSkeleton
     {

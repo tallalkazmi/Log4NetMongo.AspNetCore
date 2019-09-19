@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Log4Net.Mongo\Log4Net.Mongo.csproj" />
+    <ProjectReference Include="..\Log4NetMongo.Appender\Log4NetMongo.Appender.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 
-namespace Log4Net.Mongo
+namespace Log4NetMongo.Appender
 {
     public static class AppConfiguration
     {

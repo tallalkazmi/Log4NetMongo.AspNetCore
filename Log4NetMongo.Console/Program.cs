@@ -28,7 +28,7 @@ namespace Log4NetMongo.Console
                         <appender name='ConsoleAppender' type='log4net.Appender.ConsoleAppender'>
                             <layout type='log4net.Layout.SimpleLayout' />
                         </appender>
-                        <appender name='MongoDBAppender' type='Log4Net.Mongo.MongoDBAppender, Log4Net.Mongo'>
+                        <appender name='MongoDBAppender' type='Log4NetMongo.Appender.MongoDBAppender, Log4NetMongo.Appender'>
                             <connectionString value='mongodb://appuser:admin#123@CAN-ALPHA:9010/MACH_LOG_CORE?authSource=admin' />
                         </appender>
                         <root>

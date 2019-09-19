@@ -59,7 +59,7 @@ namespace Log4NetMongo.Core
             #region ConfigXML
             string xml = $@"
 <log4net>
-	<appender name='MongoDBAppender' type='Log4Net.Mongo.MongoDBAppender, Log4Net.Mongo'>
+	<appender name='MongoDBAppender' type='Log4NetMongo.Appender.MongoDBAppender, Log4NetMongo.Appender'>
 		<connectionString value='{ConnectionString}' />
         <collectionName value='{Collection}' />
         <newCollectionMaxDocs value='100000' />

@@ -4,7 +4,7 @@ using MongoDB.Bson;
 using System;
 using System.Collections;
 
-namespace Log4Net.Mongo
+namespace Log4NetMongo.Appender
 {
     public class BackwardCompatibility
     {
