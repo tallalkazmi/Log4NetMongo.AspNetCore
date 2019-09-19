@@ -3,15 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Tallal Kazmi</Authors>
     <Company></Company>
-    <Description>Log4Net implementation with mongodb appender in .Net Core 2.2</Description>
+    <Description>Log4Net implementation with mongodb appender for .NET Core 2.2</Description>
     <PackageLicenseFile></PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/tallalkazmi/Log4NetMongo.Core</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/tallalkazmi/Log4NetMongo.Core</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/tallalkazmi/Log4NetMongo.AspNetCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tallalkazmi/Log4NetMongo.AspNetCore</RepositoryUrl>
     <Copyright>Tallal Kazmi</Copyright>
-    <PackageTags>log4net mongodb .netcore</PackageTags>
+    <PackageTags>log4net mongodb .netcore .netcore2.2</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageId>Log4NetMongo.AspNetCore</PackageId>
     <AssemblyName>Log4NetMongo.AspNetCore</AssemblyName>
