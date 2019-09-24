@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Tallal Kazmi</Authors>
     <Company></Company>
     <Description>Log4Net implementation with mongodb appender for .NET Core 2.2</Description>
@@ -16,6 +16,7 @@
     <PackageId>Log4NetMongo.AspNetCore</PackageId>
     <AssemblyName>Log4NetMongo.AspNetCore</AssemblyName>
     <RootNamespace>Log4NetMongo.AspNetCore</RootNamespace>
+    <PackageReleaseNotes>expireAfterSeconds set to 30 days for MongoDbAppender</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
