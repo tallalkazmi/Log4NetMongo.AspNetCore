@@ -1,7 +1,8 @@
 # Log4NetMongo.AspNetCore
 Includes all Log4Net methods with `MongoDbAppender` configuration for creating application logs for multiple applications and environments with `user_id` from `ClaimsIdentity`. Supports multi-tenancy by logging `tenant` information from `ClaimsIdentity`.
 
-Updated log4mongo-net classes to work with .Net Core 2.2 (<https://github.com/log4mongo/log4mongo-net>)
+Updated log4mongo-net classes to work with .NET Core 2.2.
+- Reference: <https://github.com/log4mongo/log4mongo-net>
 
 ## Installation
 1. Add Log4NetMongo.Core package.
