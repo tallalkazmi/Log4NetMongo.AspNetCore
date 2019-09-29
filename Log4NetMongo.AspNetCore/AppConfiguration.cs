@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Log4NetMongo.AspNetCore
 {
@@ -26,6 +28,11 @@ namespace Log4NetMongo.AspNetCore
         public static string GetSectionValue(string sectionName, string sectionkey)
         {
             return configurationRoot.GetSection(sectionName).GetSection(sectionkey).Value;
+        }
+
+        public static List<KeyValuePair<string, string>> GetSectionKeys(string sectionName)
+        {
+            return configurationRoot.GetSection(sectionName).GetChildren().Select(x => new KeyValuePair<string, string>(x.Key, x.Value)).ToList();
         }
     }
 }

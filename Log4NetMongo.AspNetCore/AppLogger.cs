@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
+using System.Linq;
 using System.Reflection;
 
 namespace Log4NetMongo.AspNetCore
@@ -11,15 +12,51 @@ namespace Log4NetMongo.AspNetCore
         readonly ILog target;
 
         /// <summary>
-        /// Must set ApplicationName and Environment variables in appsettings.
+        /// Initialize Log4Net with optional settings.
         /// </summary>
-        public AppLogger()
+        /// <param name="application">Application's name. If not provided reads from ApplicationSettings key 'ApplicationName'</param>
+        /// <param name="environment">Environment's name. If not provided reads from ApplicationSettings key 'Environment'</param>
+        /// <param name="connectionString">MongoDb ConnectionString. If not provided reads from ConnectionStrings name 'MongoLogConnection'</param>
+        /// <param name="collectionName">MongoDb Collection's name. If not provided reads from ApplicationSettings key 'MongoLogCollectionName'</param>
+        /// <param name="logLevel">Log4Net log level. Default is set to 'ALL'. If not provided reads from ApplicationSettings key 'LogLevel'</param>
+        public AppLogger(string application = null,
+        string environment = null,
+        string connectionString = null,
+        string collectionName = null,
+        LogLevel? logLevel = null)
         {
-            target = GetConfiguredLog();
-        }
+            var AppSettingKeyValue = AppConfiguration.GetSectionKeys("ApplicationSettings").ToList();
+            var ConnectionStringKeyValue = AppConfiguration.GetSectionKeys("ConnectionStrings").ToList();
 
-        public AppLogger(string application, string environment) : base(application, environment)
-        {
+            base.Application = string.IsNullOrWhiteSpace(application) ?
+                AppSettingKeyValue.Any(x => x.Key == "ApplicationName") ?
+                AppSettingKeyValue.Where(x => x.Key == "ApplicationName").FirstOrDefault().Value
+                : throw new ArgumentNullException("Key 'ApplicationName' does not exists.") : application;
+
+            base.Environment = string.IsNullOrWhiteSpace(environment) ?
+                AppSettingKeyValue.Any(x => x.Key == "Environment") ?
+                AppSettingKeyValue.Where(x => x.Key == "Environment").FirstOrDefault().Value
+                : throw new ArgumentNullException("Key 'Environment' does not exists.") : environment;
+
+            base.ConnectionString = string.IsNullOrWhiteSpace(connectionString) ?
+                ConnectionStringKeyValue.Any(x => x.Key == "MongoLogConnection") ?
+                ConnectionStringKeyValue.Where(x => x.Key == "MongoLogConnection").FirstOrDefault().Value
+                : throw new ArgumentNullException("Key 'MongoLogConnection' does not exists.") : connectionString;
+
+            base.Collection = string.IsNullOrWhiteSpace(collectionName) ?
+                AppSettingKeyValue.Any(x => x.Key == "MongoLogCollectionName") ?
+                AppSettingKeyValue.Where(x => x.Key == "MongoLogCollectionName").FirstOrDefault().Value
+                : throw new ArgumentNullException("Key 'MongoLogCollectionName' does not exists.") : collectionName;
+
+            if (AppSettingKeyValue.Any(x => x.Key == "LogLevel"))
+            {
+                string _logLevelString = AppSettingKeyValue.Where(x => x.Key == "LogLevel").FirstOrDefault().Value;
+                bool isParsed = Enum.TryParse(_logLevelString, out LogLevel _logLevel);
+                if (isParsed) LogLevel = _logLevel;
+                else throw new InvalidCastException("Key 'LogLevel' is not of an acceptable value. Please set from one of the following: All, Debug, Info, Warn, Error, Fatal, Off");
+            }
+            base.LogLevel = logLevel;
+
             target = GetConfiguredLog();
         }
 
