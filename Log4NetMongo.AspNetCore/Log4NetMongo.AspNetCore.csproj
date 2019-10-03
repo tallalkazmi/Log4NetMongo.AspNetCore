@@ -28,8 +28,4 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Log4NetMongo.Appender\Log4NetMongo.Appender.csproj" />
-  </ItemGroup>
-
 </Project>

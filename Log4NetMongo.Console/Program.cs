@@ -51,7 +51,7 @@ namespace Log4NetMongo.Console
             log.Info("Starting");
 
             //while (!System.Console.KeyAvailable)
-            while (_count < 100)
+            while (_count < 10)
             {
                 log.Info(++_count);
                 Thread.Sleep(Interval);

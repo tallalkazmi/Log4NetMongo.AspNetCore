@@ -29,7 +29,7 @@ namespace Log4NetMongo.AspNetCore
             #region ConfigXML
             string xml = $@"
 <log4net>
-	<appender name='MongoDBAppender' type='Log4NetMongo.Appender.MongoDBAppender, Log4NetMongo.Appender'>
+	<appender name='MongoDBAppender' type='Log4NetMongo.AspNetCore.Appender.MongoDBAppender, Log4NetMongo.AspNetCore'>
 		<connectionString value='{ConnectionString}' />
         <collectionName value='{Collection}' />
         <expireAfterSeconds value='2592000' />

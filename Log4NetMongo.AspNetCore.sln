@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Log4NetMongo.AspNetCore", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Log4NetMongo.Console", "Log4NetMongo.Console\Log4NetMongo.Console.csproj", "{9C6D7C2D-0823-49BA-B0E2-25DF7402003D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Log4NetMongo.Appender", "Log4NetMongo.Appender\Log4NetMongo.Appender.csproj", "{089A9351-EF18-445C-B800-EAD9089D4CDB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Log4NetMongo.Test", "Log4NetMongo.Test\Log4NetMongo.Test.csproj", "{AC16FEC7-3834-410D-9B34-E02EBE624223}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{9C6D7C2D-0823-49BA-B0E2-25DF7402003D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C6D7C2D-0823-49BA-B0E2-25DF7402003D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C6D7C2D-0823-49BA-B0E2-25DF7402003D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{089A9351-EF18-445C-B800-EAD9089D4CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{089A9351-EF18-445C-B800-EAD9089D4CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{089A9351-EF18-445C-B800-EAD9089D4CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{089A9351-EF18-445C-B800-EAD9089D4CDB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AC16FEC7-3834-410D-9B34-E02EBE624223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AC16FEC7-3834-410D-9B34-E02EBE624223}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC16FEC7-3834-410D-9B34-E02EBE624223}.Release|Any CPU.ActiveCfg = Release|Any CPU
