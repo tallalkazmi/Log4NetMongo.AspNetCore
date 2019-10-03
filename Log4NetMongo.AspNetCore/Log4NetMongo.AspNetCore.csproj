@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.4</Version>
+    <Version>1.1.0</Version>
     <Authors>Tallal Kazmi</Authors>
     <Company></Company>
     <Description>Log4Net implementation with mongodb appender for .NET Core 2.2</Description>
@@ -17,6 +17,7 @@
     <AssemblyName>Log4NetMongo.AspNetCore</AssemblyName>
     <RootNamespace>Log4NetMongo.AspNetCore</RootNamespace>
     <PackageReleaseNotes>LogLevel added to configuration</PackageReleaseNotes>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
