@@ -21,7 +21,14 @@ namespace Log4NetMongo.AspNetCore
         {
             GlobalContext.Properties.Clear();
             ThreadContext.Properties.Clear();
-            SetInstanceVariables(ClaimsPrincipal.Current);
+
+            var CurrentContext = HttpContextLoggerExtension.Current;
+            if (CurrentContext != null)
+            {
+                Username = CurrentContext.User?.Identity?.Name;
+                Claim tenantClaim = CurrentContext.User.FindFirst("tenant");
+                TenantId = tenantClaim?.Value;
+            }
         }
 
         protected ILog GetConfiguredLog()
@@ -117,14 +124,6 @@ namespace Log4NetMongo.AspNetCore
             }
 
             return LogManager.GetLogger(typeof(BaseLogger));
-        }
-
-        private void SetInstanceVariables(ClaimsPrincipal principal)
-        {
-            if (principal == null) return;
-            Username = ClaimsPrincipal.Current.Identity.Name;
-            Claim tenantClaim = ClaimsPrincipal.Current.FindFirst("tenant");
-            TenantId = tenantClaim?.Value;
         }
 
         protected void SetThreadContextProperties(string methodName, string fileName, string lineNumber)
