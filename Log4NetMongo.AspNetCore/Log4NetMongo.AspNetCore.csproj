@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.1.3</Version>
+    <Version>1.2.0</Version>
     <Authors>Tallal Kazmi</Authors>
     <Company></Company>
     <Description>Log4Net implementation with mongodb appender for .NET Core 2.2</Description>
@@ -16,8 +16,8 @@
     <PackageId>Log4NetMongo.AspNetCore</PackageId>
     <AssemblyName>Log4NetMongo.AspNetCore</AssemblyName>
     <RootNamespace>Log4NetMongo.AspNetCore</RootNamespace>
-    <PackageReleaseNotes>Bug fixes</PackageReleaseNotes>
-    <AssemblyVersion>1.1.3.0</AssemblyVersion>
+    <PackageReleaseNotes>Bug fixes for IHttpContextAccessor</PackageReleaseNotes>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
